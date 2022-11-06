@@ -41,15 +41,9 @@ export const Header = () => {
         }}
       >
         {colorScheme === "light" ? (
-          <MoonStars
-            size="1.6rem"
-            weight="fill"
-          />
+          <MoonStars size="1.6rem" weight="fill" />
         ) : (
-          <Sun
-            size="1.6rem"
-            weight="fill"
-          />
+          <Sun size="1.6rem" weight="fill" />
         )}
       </Button>
     </Group>
