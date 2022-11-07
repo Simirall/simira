@@ -79,7 +79,15 @@ export const App = () => {
           globalStyles: (theme) => ({
             ":root": {
               scrollbarWidth: "thin",
-              scrollbarColor: "red gray",
+              scrollbarColor: `${
+                theme.colorScheme === "dark"
+                  ? theme.colors.primary[6]
+                  : theme.colors.primary[4]
+              } ${
+                theme.colorScheme === "dark"
+                  ? theme.colors.main[9]
+                  : theme.colors.main[1]
+              }`,
             },
             "::-webkit-scrollbar": {
               width: "0.8rem",
