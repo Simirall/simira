@@ -18,7 +18,7 @@ export const Section2 = () => {
   const kind = useMemo(() => getWhatKindOfSimira(), [_]);
 
   return (
-    <Container size="sm">
+    <Container size="sm" w="100%">
       <Paper
         p="xl"
         my="10rem"
