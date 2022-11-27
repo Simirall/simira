@@ -11,6 +11,7 @@ import {
   useMantineTheme,
 } from "@mantine/core";
 import AvatarPath from "../assets/avatar.jpg";
+import { getThemedColor } from "../utils/getThemedColor";
 import { useUser } from "../utils/useUser";
 
 export const ProfileCard = () => {
@@ -64,10 +65,12 @@ export const ProfileCard = () => {
               size="xl"
               sx={{
                 borderWidth: "0.4rem",
-                borderColor:
-                  theme.colorScheme === "dark"
-                    ? theme.colors.main[6]
-                    : theme.colors.main[3],
+                borderColor: getThemedColor({
+                  theme: theme,
+                  color: "main",
+                  darkDim: 6,
+                  lightDim: 3,
+                }),
                 borderStyle: "outset",
                 borderRadius: "100%",
               }}
@@ -76,21 +79,23 @@ export const ProfileCard = () => {
           <Box>
             <Title
               order={1}
-              color={
-                theme.colorScheme === "dark"
-                  ? theme.colors.main[4]
-                  : theme.colors.main[8]
-              }
+              color={getThemedColor({
+                theme: theme,
+                color: "main",
+                darkDim: 4,
+                lightDim: 8,
+              })}
             >
               しみらー
             </Title>
             <Text
               pl="xs"
-              color={
-                theme.colorScheme === "dark"
-                  ? theme.colors.gray[5]
-                  : theme.colors.gray[8]
-              }
+              color={getThemedColor({
+                theme: theme,
+                color: "gray",
+                darkDim: 5,
+                lightDim: 8,
+              })}
             >
               @Simirall
             </Text>
