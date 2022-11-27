@@ -8,6 +8,7 @@ import {
 } from "@mantine/core";
 import { Repeat } from "phosphor-react";
 import { useMemo, useState } from "react";
+import { getThemedColor } from "../utils/getThemedColor";
 import { getWhatKindOfSimira } from "../utils/getWhatKindOfSimira";
 
 export const Section2 = () => {
@@ -21,12 +22,14 @@ export const Section2 = () => {
       <Paper
         p="xl"
         my="10rem"
-        shadow="md"
+        shadow="sm"
         sx={{
-          backgroundColor:
-            theme.colorScheme === "dark"
-              ? theme.colors.main[8]
-              : theme.colors.main[1],
+          backgroundColor: getThemedColor({
+            theme: theme,
+            color: "main",
+            darkDim: 8,
+            lightDim: 1,
+          }),
           whiteSpace: "pre-wrap",
         }}
       >
