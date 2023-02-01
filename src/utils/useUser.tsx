@@ -10,6 +10,9 @@ export const useUser = () => {
 const fetcher: Fetcher<UserDetailed, string> = (path) =>
   fetch(path, {
     method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
     body: JSON.stringify({
       username: "Simirall",
     }),
