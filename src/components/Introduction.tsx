@@ -1,31 +1,26 @@
-import { Container, Paper, Text, Title, useMantineTheme } from "@mantine/core";
-import { Code, PaintBrush } from "phosphor-react";
-import { getThemedColor } from "../utils/getThemedColor";
+import { Container, Paper, Text, Title } from "@mantine/core";
+import { DesktopTower, PaintBrush } from "@phosphor-icons/react";
+import { useThemedValue } from "../utils/useThemedColor";
 
-export const Section3 = () => {
-  const theme = useMantineTheme();
+export const Introduction = () => {
+  const { getThemedColor } = useThemedValue();
 
   return (
     <Container size="xs">
       <Paper
         p="xl"
-        my="10rem"
+        radius="md"
         shadow="md"
-        radius="xl"
-        sx={{
-          backgroundColor: getThemedColor({
-            theme: theme,
-            darkColor: "dark",
-            darkDim: 6,
-            lightColor: "main",
-            lightDim: 0,
-          }),
-        }}
+        bg={getThemedColor({
+          darkColorSet: "dark",
+          darkDim: 6,
+          lightColorSet: "main",
+          lightDim: 0,
+        })}
       >
         <Title
           order={1}
-          color={getThemedColor({
-            theme: theme,
+          c={getThemedColor({
             color: "primary",
             darkDim: 4,
             lightDim: 6,
@@ -38,8 +33,7 @@ export const Section3 = () => {
           <Text
             component="span"
             mx="xs"
-            color={getThemedColor({
-              theme: theme,
+            c={getThemedColor({
               color: "cyan",
               darkDim: 4,
               lightDim: 6,
@@ -47,7 +41,6 @@ export const Section3 = () => {
           >
             <PaintBrush
               size={20}
-              weight="duotone"
               style={{
                 verticalAlign: "-0.2em",
               }}
@@ -58,20 +51,20 @@ export const Section3 = () => {
           <Text
             component="span"
             mx="xs"
-            color={getThemedColor({
-              theme: theme,
+            c={getThemedColor({
               color: "lime",
               darkDim: 4,
               lightDim: 6,
             })}
           >
-            <Code
-              size={24}
+            <DesktopTower
+              size={20}
               style={{
                 verticalAlign: "-0.2em",
+                marginRight: "0.2em",
               }}
             />
-            Webサイト
+            Web開発
           </Text>
           をやったりすることもありますが、あんまりやっていません。
         </Text>

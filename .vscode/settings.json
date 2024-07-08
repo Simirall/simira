@@ -1,0 +1,25 @@
+{
+  "[typescript][typescriptreact][javascript][javascriptreact][json][jsonc]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[html][css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeActionsOnSave": {
+    "quickfix.biome": "explicit",
+    "source.organizeImports.biome": "explicit",
+    "source.fixAll.eslint": "never"
+  },
+  "cSpell.words": [
+    "biomejs",
+    "Fediverse",
+    "Gasha",
+    "greetihg",
+    "Mantine",
+    "Maru",
+    "Pixiv",
+    "Simira",
+    "Simirall",
+    "tsbuildinfo"
+  ]
+}

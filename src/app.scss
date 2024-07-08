@@ -1,0 +1,24 @@
+:root {
+  scrollbar-width: "thin";
+  &[data-mantine-color-scheme="light"] {
+    scrollbar-color: var(--mantine-color-primary-4) var(--mantine-color-main-1);
+    ::selection {
+      color: var(--mantine-color-primary-3);
+      background-color: var(--mantine-color-main-9);
+    }
+  }
+  &[data-mantine-color-scheme="dark"] {
+    scrollbar-color: var(--mantine-color-primary-6) var(--mantine-color-main-9);
+    ::selection {
+      color: var(--mantine-color-primary-6);
+      background-color: var(--mantine-color-main-1);
+    }
+  }
+}
+
+body {
+  transition-property: color, background-color, border-color;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-out;
+  scroll-behavior: smooth;
+}
