@@ -1,8 +1,8 @@
-import { UserDetailed } from "misskey-js/built/entities";
-import useSWR, { Fetcher } from "swr";
+import type { UserDetailed } from "misskey-js/entities.js";
+import useSWR, { type Fetcher } from "swr";
 
 export const useUser = () => {
-  const { data } = useSWR("https://misskey.io/api/users/show", fetcher);
+  const { data } = useSWR("https://honi.club/api/users/show", fetcher);
 
   return { data };
 };
