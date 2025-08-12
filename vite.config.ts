@@ -1,10 +1,10 @@
-import react from "@vitejs/plugin-react-swc";
-import { defineConfig } from "vite";
+import { cloudflare } from '@cloudflare/vite-plugin'
+import { defineConfig } from 'vite'
+import ssrPlugin from 'vite-ssr-components/plugin'
 
-// https://vitejs.dev/config/
 export default defineConfig({
+  plugins: [cloudflare(), ssrPlugin()],
   server: {
-    open: true,
-  },
-  plugins: [react()],
-});
+    port: 5667
+  }
+})
