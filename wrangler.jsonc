@@ -1,6 +1,7 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "my-page-new",
-  "compatibility_date": "2025-08-03",
+  "compatibility_flags": ["nodejs_compat"],
+  "compatibility_date": "2025-08-07",
   "main": "./src/index.tsx"
 }
