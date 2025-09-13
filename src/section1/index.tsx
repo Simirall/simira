@@ -4,7 +4,7 @@ import night from "./image/night.webp";
 export const Section1 = ({ name }: { name: string }) => {
   return (
     <div className="p-md pt-16 h-svh">
-      <div className="mockup-window border-2 border-neutral max-w-120 h-full mx-[auto] relative bg-accent shadow-md">
+      <div className="mockup-window border-2 border-neutral max-w-120 h-full mx-[auto] relative bg-accent shadow-md animate-bounce-gentle">
         <Name name={name} />
         <img
           alt="Character"
