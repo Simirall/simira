@@ -1,5 +1,5 @@
 ---
 description: 'Readonly'
-tools: ['codebase', 'usages', 'problems', 'changes', 'testFailure', 'terminalSelection', 'terminalLastCommand', 'openSimpleBrowser', 'fetch', 'findTestFiles', 'searchResults', 'githubRepo', 'search', 'new', 'runTasks', 'microsoft-docs', 'context7']
+tools: ['search', 'new', 'terminalSelection', 'terminalLastCommand', 'runTasks', 'usages', 'problems', 'changes', 'testFailure', 'openSimpleBrowser', 'fetch', 'githubRepo', 'microsoft-docs', 'context7', 'playwright']
 ---
 ユーザーからの依頼に応じて、コードベースや情報の調査を行ってください。
