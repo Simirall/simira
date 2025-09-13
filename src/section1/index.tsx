@@ -1,10 +1,17 @@
+import { Name } from "./components/Name";
+import night from "./image/night.webp";
+
 export const Section1 = ({ name }: { name: string }) => {
   return (
-    // <div className="mockup-window bg-base-100 border border-base-300">
-    //   <div className="grid place-content-center h-80">
-    //     Hello from Section 1! {name}
-    //   </div>
-    // </div>
-    <div>from Server</div>
+    <div className="p-md pt-16 h-svh">
+      <div className="mockup-window border-2 border-neutral max-w-120 h-full mx-[auto] relative bg-accent shadow-md">
+        <Name name={name} />
+        <img
+          alt="Character"
+          className="h-full object-cover border-t-2 border-neutral"
+          src={night}
+        />
+      </div>
+    </div>
   );
 };
