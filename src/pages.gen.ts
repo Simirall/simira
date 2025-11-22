@@ -9,12 +9,15 @@ import type { getConfig as File_404_getConfig } from './pages/404';
 import type { getConfig as File_About_getConfig } from './pages/about';
 // prettier-ignore
 import type { getConfig as File_Index_getConfig } from './pages/index';
+// prettier-ignore
+import type { getConfig as File_Root_getConfig } from './pages/_root';
 
 // prettier-ignore
 type Page =
 | ({ path: '/404' } & GetConfigResponse<typeof File_404_getConfig>)
 | ({ path: '/about' } & GetConfigResponse<typeof File_About_getConfig>)
-| ({ path: '/' } & GetConfigResponse<typeof File_Index_getConfig>);
+| ({ path: '/' } & GetConfigResponse<typeof File_Index_getConfig>)
+| ({ path: '/_root' } & GetConfigResponse<typeof File_Root_getConfig>);
 
 // prettier-ignore
 declare module 'waku/router' {
