@@ -3,5 +3,5 @@
   "name": "my-page-new",
   "compatibility_flags": ["nodejs_compat"],
   "compatibility_date": "2025-08-07",
-  "main": "./src/index.tsx"
+  "main": "./src/server-entry.tsx"
 }

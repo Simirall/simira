@@ -1,16 +1,18 @@
 {
   "compilerOptions": {
+    "strict": true,
     "target": "ESNext",
     "module": "ESNext",
+    "noEmit": true,
+    "isolatedModules": true,
     "moduleResolution": "Bundler",
-    "strict": true,
+    "moduleDetection": "force",
+    "downlevelIteration": true,
+    "esModuleInterop": true,
     "skipLibCheck": true,
-    "lib": [
-      "ESNext",
-      "DOM"
-    ],
-    "types": ["vite/client"],
-    "jsx": "react-jsx",
-    "jsxImportSource": "hono/jsx"
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "lib": ["ESNext", "DOM"],
+    "jsx": "react-jsx"
   },
 }

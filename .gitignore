@@ -3,6 +3,7 @@ dist/
 dist-server/
 
 # dev
+.cache
 .yarn/
 !.yarn/releases
 .vscode/*
@@ -22,6 +23,7 @@ node_modules/
 .dev.vars
 
 # logs
+*.tsbuildinfo
 logs/
 *.log
 npm-debug.log*
