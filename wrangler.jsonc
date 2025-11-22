@@ -3,5 +3,9 @@
   "name": "my-page-new",
   "compatibility_flags": ["nodejs_compat"],
   "compatibility_date": "2025-08-07",
-  "main": "./src/server-entry.ts"
+  "main": "./dist/server/serve-cloudflare.js",
+  "assets": {
+    "binding": "ASSETS",
+    "directory": "./dist/public"
+  }
 }

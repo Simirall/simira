@@ -8,7 +8,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="ja">
       <head>
-        <link href="/images/favicon.ico" rel="icon" type="image/x-icon" />
+        <link href="/public/favicon.ico" rel="icon" type="image/x-icon" />
         <link href="https://fonts.googleapis.com" rel="preconnect" />
         <link
           crossOrigin="anonymous"
