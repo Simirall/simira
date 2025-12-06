@@ -7,7 +7,7 @@ export default async function HomePage() {
   return (
     <div>
       <title>Simirall</title>
-      <div className="flex flex-col items-center justify-center gap-y-60 py-8 md:py-48">
+      <div className="flex flex-col items-center justify-center gap-y-24 py-24 md:gap-y-60 md:py-48">
         <ProfileCard />
         <InfoCard />
         <Timelines />

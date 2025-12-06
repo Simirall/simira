@@ -1,6 +1,6 @@
 export const InfoCard = () => {
   return (
-    <div className="card image-full max-w-96 bg-base-100 shadow-xl">
+    <div className="card image-full max-w-96 bg-base-100 shadow-lg">
       <figure>
         <img alt="Shoes" src="/mirai1.avif" />
       </figure>
