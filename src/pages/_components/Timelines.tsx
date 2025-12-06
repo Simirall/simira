@@ -21,7 +21,7 @@ import {
   MountainsIcon,
   WindIcon,
 } from "@phosphor-icons/react/dist/ssr";
-import { Timeline, type TimelineItem } from "./timeline";
+import { Timeline, type TimelineItem } from "./Timeline";
 
 const hobby: ReadonlyArray<TimelineItem> = [
   {

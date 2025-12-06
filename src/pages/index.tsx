@@ -1,6 +1,6 @@
 
 import { ProfileCard } from "./_components/ProfileCard";
-import { Timelines } from "./_components/timelines";
+import { Timelines } from "./_components/Timelines";
 
 export default async function HomePage() {
   return (
