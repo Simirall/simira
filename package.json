@@ -11,22 +11,22 @@
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.10",
-    "hono": "^4.10.6",
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0",
-    "react-server-dom-webpack": "^19.2.0",
-    "waku": "0.27.1"
+    "hono": "^4.10.7",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
+    "react-server-dom-webpack": "^19.2.1",
+    "waku": "0.27.3"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.3.6",
+    "@biomejs/biome": "2.3.8",
     "@tailwindcss/vite": "^4.1.17",
     "@types/node": "^24.10.1",
-    "@types/react": "^19.2.6",
+    "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
-    "daisyui": "^5.5.5",
+    "daisyui": "^5.5.8",
     "tailwindcss": "4.1.17",
-    "vite": "^7.2.4",
-    "wrangler": "^4.50.0"
+    "vite": "^7.2.6",
+    "wrangler": "^4.53.0"
   },
   "packageManager": "pnpm@10.22.0"
 }
