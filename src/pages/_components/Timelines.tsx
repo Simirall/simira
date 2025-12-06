@@ -137,7 +137,7 @@ const work: ReadonlyArray<TimelineItem> = [
 
 export const Timelines = () => {
   return (
-    <div className="space-y-20">
+    <div className="flex flex-wrap justify-center gap-y-20">
       <div className="flex flex-col items-center gap-4">
         <h2 className="text-2xl">hobby dev history</h2>
         <Timeline items={hobby} />
