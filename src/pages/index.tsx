@@ -1,16 +1,17 @@
-
 import { InfoCard } from "./_components/InfoCard";
+import { Links } from "./_components/Links";
 import { ProfileCard } from "./_components/ProfileCard";
 import { Timelines } from "./_components/Timelines";
 
 export default async function HomePage() {
   return (
-    <div className="h-[300vh]">
+    <div>
       <title>Simirall</title>
-      <div className="flex flex-col items-center justify-center gap-y-60 py-48">
+      <div className="flex flex-col items-center justify-center gap-y-60 py-8 md:py-48">
         <ProfileCard />
         <InfoCard />
         <Timelines />
+        <Links />
       </div>
     </div>
   );

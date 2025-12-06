@@ -3,11 +3,10 @@ import { Avatar } from "./avatar";
 export const ProfileCard = () => {
   return (
     <div className="hover-3d">
-      {/* content */}
       <figure className="rounded-lg shadow-lg">
         <div className="mockup-window border-2 border-teal-100 bg-teal-100 dark:border-teal-900 dark:bg-teal-900">
           <div className="w-120 max-w-full space-y-4 bg-white px-12 py-8 dark:bg-base-100">
-            <div className="flex items-center gap-8">
+            <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2">
               <Avatar />
               <div className="flex shrink-0 flex-col items-start gap-x-4 gap-y-2">
                 <p className="text-3xl">しみらー</p>
@@ -35,6 +34,7 @@ export const ProfileCard = () => {
           </div>
         </div>
       </figure>
+
       {/* 8 empty divs needed for the 3D effect */}
       <div></div>
       <div></div>

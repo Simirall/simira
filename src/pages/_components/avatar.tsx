@@ -28,8 +28,6 @@ const fetchAvatar = async () => {
   const url = "https://misskey.io/api/users/show" as const;
 
   try {
-    await new Promise((resolve) => setTimeout(resolve, 10000));
-
     const res = await fetch(url, {
       method: "POST",
       headers: {
