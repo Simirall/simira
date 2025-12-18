@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "my-page-new",
+  "name": "simira-site",
   "compatibility_flags": ["nodejs_compat"],
   "compatibility_date": "2025-08-07",
   "main": "./dist/server/serve-cloudflare.js",
