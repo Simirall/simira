@@ -129,7 +129,7 @@ const work: ReadonlyArray<TimelineItem> = [
     icon: <MountainsIcon className="text-base-content" weight="fill" />,
   },
   {
-    content: "Playwirhgt",
+    content: "Playwright",
     label: "Now",
     icon: <MonitorPlayIcon className="text-base-content" weight="fill" />,
   },
@@ -137,15 +137,22 @@ const work: ReadonlyArray<TimelineItem> = [
 
 export const Timelines = () => {
   return (
-    <div className="flex flex-wrap justify-center gap-y-20 rounded-xl border-4 border-base-300 bg-secondary p-4 shadow-lg dark:bg-neutral">
-      <div className="flex flex-col items-center gap-4">
-        <h2 className="text-2xl">hobby dev history</h2>
-        <Timeline items={hobby} />
+    <details className="collapse-arrow collapse max-w-250 border border-base-300 bg-base-100">
+      <summary className="collapse-title font-semibold">
+        Development History
+      </summary>
+      <div className="collapse-content">
+        <div className="flex flex-wrap justify-center gap-y-20 rounded-xl border-4 border-base-300 bg-secondary p-4 shadow-lg dark:bg-neutral">
+          <div className="flex flex-col items-center gap-4">
+            <h2 className="text-2xl">hobby dev history</h2>
+            <Timeline items={hobby} />
+          </div>
+          <div className="flex flex-col items-center gap-4">
+            <h2 className="text-2xl">work dev history</h2>
+            <Timeline items={work} />
+          </div>
+        </div>
       </div>
-      <div className="flex flex-col items-center gap-4">
-        <h2 className="text-2xl">work dev history</h2>
-        <Timeline items={work} />
-      </div>
-    </div>
+    </details>
   );
 };
