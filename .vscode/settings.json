@@ -1,4 +1,5 @@
 {
+  "editor.formatOnSave": true,
   "[typescript][typescriptreact][javascript][javascriptreact][json][jsonc]": {
     "editor.defaultFormatter": "biomejs.biome"
   },
@@ -8,6 +9,7 @@
   "editor.codeActionsOnSave": {
     "quickfix.biome": "explicit",
     "source.organizeImports.biome": "explicit",
+    "source.fixAll.biome": "explicit",
     "source.fixAll.eslint": "never"
   },
   "cSpell.words": [

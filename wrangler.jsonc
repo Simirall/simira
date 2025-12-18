@@ -1,0 +1,11 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "my-page-new",
+  "compatibility_flags": ["nodejs_compat"],
+  "compatibility_date": "2025-08-07",
+  "main": "./dist/server/serve-cloudflare.js",
+  "assets": {
+    "binding": "ASSETS",
+    "directory": "./dist/public"
+  }
+}

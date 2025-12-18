@@ -1,31 +1,43 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
-  "files": {
-    "include": ["src/*"],
-    "ignoreUnknown": true
-  },
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
   "vcs": {
-    "enabled": true,
+    "enabled": false,
     "clientKind": "git",
-    "useIgnoreFile": true
+    "useIgnoreFile": false
   },
-  "organizeImports": {
-    "enabled": true
+  "files": {
+    "ignoreUnknown": false
   },
   "formatter": {
-    "indentStyle": "space",
-    "lineWidth": 120
+    "enabled": true,
+    "indentStyle": "space"
   },
   "linter": {
     "enabled": true,
     "rules": {
       "recommended": true,
-      "correctness": {
-        "noUnusedImports": "error",
-        "useHookAtTopLevel": "error"
-      },
-      "style": {
-        "useBlockStatements": "error"
+      "nursery": {
+        "useSortedClasses": "error"
+      }
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "double"
+    }
+  },
+  "css": {
+    "parser": {
+      "tailwindDirectives": true
+    }
+  },
+  "assist": {
+    "enabled": true,
+    "actions": {
+      "source": {
+        "organizeImports": "on",
+        "useSortedAttributes": "on",
+        "useSortedProperties": "on"
       }
     }
   }
