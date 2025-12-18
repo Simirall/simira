@@ -20,6 +20,16 @@ export default async function RootElement({
           rel="stylesheet"
         />
         <meta content="Simirall Site" name="description" />
+        <meta content="Simirall" property="og:title" />
+        <meta content="website" property="og:type" />
+        <meta content="https://simira.partial.cc/" property="og:url" />
+        <meta content="https://simira.partial.cc/ogp.png" property="og:image" />
+        <meta content="Simirall Site" property="og:site_name" />
+        <meta content="ja_JP" property="og:locale" />
+        <meta content="summary" name="twitter:card" />
+        <meta content="@Simirall" name="twitter:site" />
+        <meta content="Simirall" name="twitter:title" />
+        <meta content="Simirall Site" name="twitter:description" />
       </head>
       <body>{children}</body>
     </html>
