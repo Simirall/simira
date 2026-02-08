@@ -2,7 +2,7 @@ import MilistennaImage from "../_image/milistenna.png";
 
 export const Milistenna = () => {
   return (
-    <div className="card card-side bg-base-100 shadow-sm">
+    <div className="card md:card-side bg-base-100 shadow-sm">
       <figure className="h-60">
         <img alt="Milistenna Screenshot" src={MilistennaImage} />
       </figure>
