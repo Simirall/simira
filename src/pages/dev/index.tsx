@@ -1,11 +1,16 @@
 import { Title } from "../../_common/Title";
+import { Milistenna } from "./_components/Milistenna";
 import { Timelines } from "./_components/Timelines";
 
 export default async function AboutPage() {
   return (
     <>
       <title>Dev - Simirall</title>
-      <Title>My Development</Title>
+      <Title>My Works</Title>
+      <div className="justify-center-safe mb-8 flex flex-wrap gap-4">
+        <Milistenna />
+      </div>
+      <Title>My Development History</Title>
       <Timelines />
     </>
   );
