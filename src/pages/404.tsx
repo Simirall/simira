@@ -3,6 +3,7 @@ import { Link } from "waku";
 export default async function NotFound() {
   return (
     <div className="flex grow flex-col items-center justify-center gap-md">
+      <title>Not Found - Simirall</title>
       <div className="bg-linear-to-r from-teal-300 to-sky-400 bg-clip-text text-8xl text-transparent">
         Not Found
       </div>
