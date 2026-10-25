@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @plugin "daisyui" {
-  themes: nord --default, abyss --prefersdark;
+  themes:
+    nord --default,
+    abyss --prefersdark;
 }
 
 @theme {
@@ -13,6 +15,10 @@
   --spacing-xl: 2rem;
 }
 
-@view-transition {
-  navigation: auto;
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none;
+  }
 }
