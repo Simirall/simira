@@ -8,7 +8,7 @@ export default async function AboutPage() {
     <>
       <title>Dev - Simirall</title>
       <Title>My Works</Title>
-      <div className="justify-center-safe mb-8 flex flex-wrap gap-4">
+      <div className="mb-8 flex flex-wrap justify-center-safe gap-4">
         <Milistenna />
       </div>
       <Title>Contest</Title>

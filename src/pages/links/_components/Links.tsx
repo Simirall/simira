@@ -64,7 +64,7 @@ const links: ReadonlyArray<Link> = [
 
 export const Links = () => {
   return (
-    <ul className="list w-96 max-w-full rounded-box bg-base-100 shadow-lg">
+    <ul className="list rounded-box bg-base-100 w-96 max-w-full shadow-lg">
       {links.map((link) => (
         <a
           className="list-row items-center"

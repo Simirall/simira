@@ -17,7 +17,10 @@
     "rules": {
       "preset": "recommended",
       "nursery": {
-        "useTailwindSortedClasses": "error"
+        "useTailwindSortedClasses": {
+          "level": "error",
+          "fix": "safe"
+        }
       }
     }
   },

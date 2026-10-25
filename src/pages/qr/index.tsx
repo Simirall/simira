@@ -5,7 +5,7 @@ export default async function QRPage() {
   return (
     <div className="flex grow flex-col items-center justify-center gap-8">
       <title>Simirall</title>
-      <h1 className="font-light text-3xl">しみらー / Simirall</h1>
+      <h1 className="text-3xl font-light">しみらー / Simirall</h1>
       <img
         alt="Home QR"
         className="w-40 rounded-3xl shadow-lg"

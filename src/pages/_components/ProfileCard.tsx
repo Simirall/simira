@@ -5,7 +5,7 @@ export const ProfileCard = () => {
     <div className="hover-3d">
       <figure className="rounded-lg shadow-lg">
         <div className="mockup-window border-2 border-teal-100 bg-teal-100 dark:border-teal-900 dark:bg-teal-900">
-          <div className="w-120 max-w-full space-y-4 bg-white px-12 py-8 dark:bg-base-100">
+          <div className="dark:bg-base-100 w-120 max-w-full space-y-4 bg-white px-12 py-8">
             <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2">
               <Avatar />
               <div className="flex shrink-0 flex-col items-start gap-x-4 gap-y-2">
@@ -18,7 +18,7 @@ export const ProfileCard = () => {
             <p>SNSとWebとイラスト。</p>
             <span className="inline-flex flex-wrap items-center gap-2">
               Simirall Likes:
-              <span className="text-2xl text-rotate text-white">
+              <span className="text-rotate text-2xl text-white">
                 <span className="*:rounded *:px-2">
                   <span className="bg-[#58c4dc]">React</span>
                   <span className="bg-[#86b300]">Misskey</span>

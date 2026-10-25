@@ -137,12 +137,12 @@ const work: ReadonlyArray<TimelineItem> = [
 
 export const Timelines = () => {
   return (
-    <details className="collapse-arrow collapse max-w-250 border border-base-300 bg-base-100">
+    <details className="collapse-arrow border-base-300 bg-base-100 collapse max-w-250 border">
       <summary className="collapse-title font-semibold">
         Development History
       </summary>
       <div className="collapse-content">
-        <div className="flex flex-wrap justify-center gap-y-20 rounded-xl border-4 border-base-300 bg-secondary p-4 shadow-lg dark:bg-neutral">
+        <div className="border-base-300 bg-secondary dark:bg-neutral flex flex-wrap justify-center gap-y-20 rounded-xl border-4 p-4 shadow-lg">
           <div className="flex flex-col items-center gap-4">
             <h2 className="text-2xl">hobby dev history</h2>
             <Timeline items={hobby} />
