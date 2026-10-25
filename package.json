@@ -2,6 +2,7 @@
   "name": "my-page-new",
   "type": "module",
   "private": true,
+  "packageManager": "pnpm@12.15.0",
   "scripts": {
     "dev": "waku dev",
     "build": "waku build",

@@ -2,11 +2,27 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "simira-site",
   "compatibility_flags": ["nodejs_compat"],
-  "compatibility_date": "2025-08-07",
+  "compatibility_date": "2026-10-01",
   "main": "./dist/server/index.js",
   "no_bundle": true,
   "assets": {
     "binding": "ASSETS",
     "directory": "./dist/public"
-  }
+  },
+  "observability": {
+    "logs": {
+      "enabled": true,
+      "head_sampling_rate": 1,
+      "invocation_logs": true,
+      "persist": true
+    },
+    "traces": {
+      "enabled": true,
+      "head_sampling_rate": 1,
+      "persist": true
+    },
+    "issue_detection": {
+      "enabled": true
+    }
+  },
 }
